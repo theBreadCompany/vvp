@@ -1,0 +1,26 @@
+/* Class = "UITabBarItem"; title = "Settings"; ObjectID = "2P6-WJ-3PU"; */
+"2P6-WJ-3PU.title" = "Einstellungen\n";
+
+/* Class = "UITabBarItem"; title = "News"; ObjectID = "iMd-y3-6u7"; */
+"iMd-y3-6u7.title" = "Nachrichten";
+
+/* Class = "UILabel"; text = "Font Size"; ObjectID = "Ncm-ZS-2Ap"; */
+"Ncm-ZS-2Ap.text" = "Scrhriftgröße";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "R7O-gv-1Mh"; */
+"R7O-gv-1Mh.text" = "Kein Impressum :/";
+
+/* Class = "UILabel"; text = "Displaying credits failed!"; ObjectID = "RcA-2S-JCJ"; */
+"RcA-2S-JCJ.text" = "Keine Credits vorhanden :/";
+
+/* Class = "UILabel"; text = "Archive posts"; ObjectID = "SWa-RY-a6S"; */
+"SWa-RY-a6S.text" = "Archiviere Beiträge\n";
+
+/* Class = "UINavigationItem"; title = "Settings"; ObjectID = "TmL-h2-Sg6"; */
+"TmL-h2-Sg6.title" = "Einstellungen";
+
+/* Class = "UILabel"; text = "Currently saved posts"; ObjectID = "zLQ-GI-nIQ"; */
+"zLQ-GI-nIQ.text" = "Derzeit gespeicherte Beiträge";
+
+/* Class = "UILabel"; text = "written by "; ObjectID = "g0u-ZZ-am2"; */
+"g0u-ZZ-am2.text" = "verfasst von ";

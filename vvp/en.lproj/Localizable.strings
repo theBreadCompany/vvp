@@ -1,0 +1,15 @@
+/* credit to the creator of the app */
+"created by theBreadCompany\nthis is an educational project, feedback is appreciated ^^" = "entwickelt von theBreadCompany\ndieses Projekt ist zum Lernen entwickeltelt worden, Feedback ist ausdrücklich erwünscht ^^";
+
+/* empty postDB notice */
+"No posts available, please check your internet connection.\n\nIf nothing appears, please submit a bug report." = "Es sind keine Beiträge verfügbar, bitte Internetverbindung prüfen.\n\nWenn auch dann nichts passiert, bitte einen Fehler melden.";
+
+/* debug note */
+"This is a debugging build! You may watch the logs." = "Dies ist eine Version zur Fehlerbehebung! Protokolle stehen zur Verfügung.";
+
+/* debug note */
+"This is a release build!" = "Dies ist ein Version zur Veröffentlichung!";
+
+/* the impressum */
+"Welcome to vvp - the inofficial app for volksverpetzer.de!\n\nThis version contains\n- showing an entry for an entry, being a thumbnail and a title (excerpt wip)\n- reading the full article\n- perisistently storing articles and their media\n- some settings that do nothing for now\n\n(debugNote)" = "Willkommen in vvp - der inoffiziellen App für volksverpetzer.de\"\n\nDiese Version kann\n- für einen Beitrag einen Eintrag mit Bild und Titel zeigen (Zusammenfassung kommt noch)\n- einen vollen Artikel anzeigen\n- dauerhaft Beiträge und Medien speichern\n- Einstellungen verwalten, die bis jetzt nichts bringen";
+
