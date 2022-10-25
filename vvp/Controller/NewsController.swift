@@ -64,6 +64,9 @@ class NewsController: UITableViewController {
         }
     }
     
+    override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
+        self.tableView.reloadData()
+    }
 }
 
 extension NewsController {
@@ -111,11 +114,19 @@ extension PersistenceManager: UITableViewDataSourcePrefetching, UITableViewDataS
     
     func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {
         
+        if let row = indexPaths.last?.row, posts.count - row < 3 {
+            self.fetchPosts(limit: 10) { newPosts in
+                if newPosts > 0 {
+                    
+                }
+            }
+        }
+        
         for path in indexPaths {
             let post = posts[path.row]
-            PersistenceManager.shared.getViewcount(for: post) { _ in }
+            self.getViewcount(for: post) { _ in }
             if let url = post._embedded?.wp_featuredmedia.first?.media_details?.sizes.large.source_url {
-                PersistenceManager.shared.download(url) { _ in }
+                self.download(url) { _ in }
             }
         }
     }
@@ -151,7 +162,7 @@ extension PersistenceManager: UITableViewDataSourcePrefetching, UITableViewDataS
             cell.date.text = "No date available!"
         }
         
-        if let viewcount = PersistenceManager.shared.getViewcount(for: post)?.description {
+        if let viewcount = self.getViewcount(for: post)?.description {
             cell.views.text = viewcount
         } else {
             PersistenceManager.shared.getViewcount(for: post) { _ in
@@ -162,11 +173,11 @@ extension PersistenceManager: UITableViewDataSourcePrefetching, UITableViewDataS
         }
         
         if let url = post._embedded?.wp_featuredmedia.first?.media_details?.sizes.large.source_url {
-            if let image = UIImage(contentsOfFile: PersistenceManager.shared.urlForRemote(url).path) {
+            if let image = UIImage(contentsOfFile: self.urlForRemote(url).path) {
                 cell.thumbnail.image = image
                 
             } else {
-                PersistenceManager.shared.download(url) { _ in
+                self.download(url) { _ in
                     DispatchQueue.main.async {
                         tableView.reloadRows(at: [indexPath], with: .none)
                     }
