@@ -8,7 +8,7 @@
 import Foundation
 import WPKit
 import UIKit
-//import SafariServices
+import SafariServices
 
 class NewsView: UIViewController, UITextViewDelegate {
     var post: WPPost?
@@ -56,6 +56,11 @@ class NewsView: UIViewController, UITextViewDelegate {
                 published.text = "No date available!"
             }
         }
+    }
+    
+    func textView(_ textView: UITextView, shouldInteractWith URL: URL, in characterRange: NSRange, interaction: UITextItemInteraction) -> Bool {
+        self.present(SFSafariViewController(url: URL), animated: true, completion: nil)
+        return false
     }
     
     override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
