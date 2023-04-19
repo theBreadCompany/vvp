@@ -1,4 +1,4 @@
-# <img src=https://cdn.discordapp.com/attachments/1034437799048380477/1034442812562878484/VolksverpetzerIcon256x2561xunbordered.png width=7.5% height=7.5%> vvp 
+# <img src=https://cdn.discordapp.com/attachments/1034437799048380477/1034442812562878484/VolksverpetzerIcon256x2561xunbordered.png width=7.5% height=7.5%> vvp (DISCONTINUED IN FAVOUR OF THE OFFICIAL APP ([Apple](https://apps.apple.com/de/app/volksverpetzer/id6444314080)/[Android](https://play.google.com/store/apps/details?id=de.volksverpetzer.app))
 
 
 This is the inoffical iOS client for the german anti-fake-news-collective [volksverpetzer](https://www.volksverpetzer.de) (yes it is really against fake-news and does studies and proofs and stuff like that, the translation is like "people's tattletale").
